@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .hero {
+            height: 100vh;
+            width: 100%;
+            background-image: url('1.jpg');
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .form-box {
+            width: 380px;
+            height: 480px;
+            position: relative;
+            margin: 6% auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .button-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: 0 0 20px 9px #ff61241f;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        .toggle-btn {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #333;
+            position: relative;
+        }
+
+        #btn {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: linear-gradient(to right, #ff105f, #ffad06);
+            transition: 0.5s;
+        }
+
+        .input-group {
+            position: absolute;
+            top: 180px;
+            width: 280px;
+            transition: 0.5s;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            background: transparent;
+            color: #333;
+        }
+
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            background: linear-gradient(to right, #ff105f, #ffad06);
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(to right, #ffad06, #ff105f);
+        }
+
+        .check-box {
+            margin: 10px 0;
+        }
+
+        .span {
+            color: #777;
+            font-size: 12px;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+            box-shadow: 0 0 20px 0 #7f7f7f3d;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="showLogin()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="showRegister()">Register</button>
+        </div>
+
+        <div class="social-icons">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyH5O1uBnx96HBVzmuoEpXkKsdRn1lP7LzQ&usqp=CAU" alt="Twitter">
+            <img src="https://cdn3.iconfinder.com/data/icons/glypho-social-and-other-logos/64/logo-facebook-512.png" alt="Facebook">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/006/827/459/small_2x/email-icon-sign-symbol-logo-vector.jpg" alt="Email">
+        </div>
+
+        <!-- Login form pointing to process_route.php -->
+        <form id="login" class="input-group" action="login.php" method="POST"> 
+            <input type="text" class="input-field" name="user_id" placeholder="User ID" required>
+            <input type="password" class="input-field" name="password" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box" id="remember-me"> 
+            <label for="remember-me" class="span">Remember Password</label>
+            <button type="submit" class="submit-btn">Log In</button>
+           
+        </form>
+
+        <!-- Registration form pointing to the same script -->
+        <form id="register" class="input-group" action="login.php" method="POST">
+            <input type="text" class="input-field" name="user_id" placeholder="User ID" required>
+            <input type="email" class="input-field" name="email" placeholder="Email ID" required>
+            <input type="password" class="input-field" name="password" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box" id="agree-terms"> 
+            <label for="agree-terms" class="span">I agree to the terms & conditions</label>
+            <button type="submit" class="submit-btn">Register</button>
+            
+        </form>
+    </div>
+</div>
+
+<script>
+    var loginForm = document.getElementById("login");
+    var registerForm = document.getElementById("register");
+    var toggleButton = document.getElementById("btn");
+
+    function showLogin() {
+        loginForm.style.left = "50px";
+        registerForm.style.left = "450px";
+        toggleButton.style.left = "0px";
+    }
+
+    function showRegister() {
+        loginForm.style.left = "400px";
+        registerForm.style.left = "50px";
+        toggleButton.style.left = "110px";
+    }
+
+    // Debugging to verify form submission
+    console.log("Script loaded. Ready for form submission.");
+</script>
+
+</body>
+</html>

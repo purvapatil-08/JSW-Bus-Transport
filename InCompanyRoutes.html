@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Route Page</title>
+    <style>
+        /* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.jsw.in/sites/default/files/assets/cache/images//yamunaexpresswayhero-bannermobile440x57015-resize-440x570-a7542dd51f-2126b88281ae5a7c.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flex layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+h1 {
+    text-align: center; /* Center text */
+    color: #333; /* Dark gray text */
+}
+
+form {
+    background-color: white; /* White background */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+label {
+    font-weight: bold; /* Bold font for labels */
+}
+
+select, input[type="submit"] {
+    display: block; /* Each element on its own line */
+    margin: 10px 0; /* Spacing between elements */
+    padding: 10px; /* Padding inside the elements */
+    width: 100%; /* Full width */
+}
+
+input[type="submit"] {
+    background-color: blue; /* blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+    </style>
+    <!-- Link to the external CSS file -->
+   
+</head>
+<body>
+    <h1>Choose Your Route</h1>
+    <!-- Form for selecting a destination -->
+    <form action="companyroute.php" method="POST">
+        <label for="destination">Select a Destination:</label>
+        <select name="destination" id="destination">
+            <!-- Dropdown options for destinations -->
+            <option value="SMS-II">SMS-II</option>
+            <option value="HSM-II coil yard">HSM-II coil yard</option>
+            <option value="HSM-II">HSM-II</option>
+            <option value="BF-II">BF-II</option>
+            <option value="Fire station">fire station</option>
+            <option value="LDO Circle">LDO Circle</option>
+            <option value="CRS">CRS</option>
+            <option value="Goa Gate">Goa Gate</option>
+            <option value="LDO Circle">LDO Circle</option>
+            <option value="Glass House">Glass House</option>
+            <option value="BF Turning">BF Turning</option>
+            <option value="Stock House">Stock House</option>
+            <option value="Sinter-II">Sinter-II</option>
+            <option value="Pellet-I">Pellet-I</option>
+            <option value="LCP-1/2/3/4">LCP-1/2/3/4</option>
+            <option value="SIP">SIP</option>
+            <option value="Ferro Stores">Ferro Stores</option>
+            <option value="Chuna Gate">Chuna Gate</option>
+            <option value="Innovation Turning">Innovation Turning</option>
+            <option value="Alibag Gate">Alibag Gate</option>
+            <option value="G+2">G+2</option>
+            <option value="Innovation Turning">Innovation Turning</option>
+            <option value="Coil Yard">Coil Yard</option>
+            <option value="Bar Mill">Bar Mill</option>
+            <option value="Billet Caster">Billet Caster</option>
+            <option value="CRS">CRS</option>
+            <option value="Goa Gate">Goa Gate</option>
+            <option value="1000TPD">1000TPD</option>
+            <option value="LDO Circle">LDO Circle</option>
+            <option value="Fire station">Fire station</option>
+            <option value="BF-II">BF-II</option>
+            <option value="HSM-II">HSM-II</option>
+            <option value="HSM-II Coil Yard">HSM-II Coil Yard</option>
+            <option value="SMS-II">SMS-II</option>
+
+
+        </select>
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

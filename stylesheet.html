@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSW Bus Transport</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.electrive.com/media/2022/08/switch-mobility-elektrobus-electric-bus-eiv12-2022-01-min.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+
+        .site-header {
+            background: black; 
+            font-family: Calibri, sans-serif;
+            padding: 10px 15px; 
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+        }
+
+        .logo {
+            font-size: 35px; 
+            font-weight: 600; 
+            color: white; 
+            display: flex;
+            align-items: center; 
+        }
+
+        .logo img {
+            height: 50px; 
+            width: auto; 
+        }
+
+        ul {
+            list-style-type: none; 
+            display: flex; 
+            gap: 25px; 
+        }
+
+        li a {
+            color: white; 
+            font-size: 18px; 
+            font-weight: bold; 
+            text-decoration: none; 
+        }
+
+        .content {
+            flex: 1; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        .hero {
+            text-align: center; 
+            color: white; 
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 50px; 
+            border-radius: 10px; 
+            border: none; 
+            outline: none; 
+            box-shadow: none; 
+        }
+
+        .hero h1 {
+            font-size: 4em; 
+            color: white; 
+            border: none; 
+            background:transparent; 
+            outline: none;
+            box-shadow: none; 
+        }
+
+        .hero p {
+            font-size: 1.5em; 
+            color: white; 
+            border: none; 
+            background: transparent; 
+            outline: none; 
+            box-shadow: none; 
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #007BFF; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 5px;
+            text-decoration: none; 
+            transition: background-color 0.3s; 
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.7); 
+            color: white;
+            text-align: center; 
+            padding: 15px; 
+        }
+
+        .social-icons {
+            display: flex; 
+            justify-content: center; 
+            gap: 10px; 
+        }
+
+        .social-icons img {
+            height: 16px; 
+            width: auto;
+            border-radius: 50%; 
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); 
+        }
+    </style>
+
+    <link rel="icon" href="images/JSW_logo.jpg" type="image/jpg">
+    <script>
+        function confirmLogout(event) {
+            event.preventDefault();
+            if (confirm('Are you sure you want to log out?')) {
+                window.location.href = event.target.href;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const logoutLink = document.getElementById('logout-link');
+            if (logoutLink) {
+                logoutLink.addEventListener('click', confirmLogout);
+            }
+        });
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <img src='https://www.jsw.in/sites/all/themes/jsw_theme/images/logos/jsw.png' alt="Company Logo" style="height: 50px; width: auto;">
+                </div>
+                <ul>
+                    <li><a href="stylesheet.html">Home</a></li>
+                    <li><a href="busdetails.html">Bus Details</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="login.html" id="logout-link">Log Out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Welcome to JSW Bus Transport</h1>
+                <p>Your trusted partner in bus transportation.</p>
+            </div>
+        </header>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 JSW Bus Transport. All rights reserved.</p>
+            <div class="social-icons">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeyH5O1uBnx96HBVzmuoEpXkKsdRn1lP7LzQ&usqp=CAU" alt="Twitter">
+                <img src="https://i.pinimg.com/736x/bb/90/24/bb902442d0880e99732aa1aada0c08de.jpg" alt="Facebook">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/006/827/459/small_2x/email-icon-sign-symbol-logo-vector.jpg" alt="Email">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

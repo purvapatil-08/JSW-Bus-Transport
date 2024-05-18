@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Bus Transport Schedule</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: rgba(0, 68, 204, 0.85);
+            color: white;
+            text-align: center;
+            padding: 15px; /* Reduced padding for smaller header */
+            font-size: 1.5em; /* Reduced font size for smaller header */
+        }
+
+        /* Section styles */
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: transparent;
+            border: none;
+        }
+
+        /* Table title */
+        section h2 {
+            color: black; /* Table title in black */
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: transparent;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+            background-color: rgba(240, 240, 240, 0.9);
+            font-weight: bold;
+            color: black;
+        }
+
+        td {
+            background-color: transparent;
+            font-weight: normal;
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(247, 247, 247, 0.3);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgba(0, 68, 204, 0.85);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffad06;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.2em; /* Smaller font size for small screens */
+                padding: 10px; /* Reduced padding for small screens */
+            }
+
+            section {
+                padding: 15px;
+                margin: 10px;
+            }
+
+            th, td {
+                padding: 10px; /* Reduced padding for smaller screens */
+            }
+
+            footer {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>JSW Bus Transport Schedule</h1>
+    </header>
+
+    <!-- Schedule Section -->
+    <section>
+        <h2>Daily Bus Transport Schedule</h2> <!-- Black title for the table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Stop</th>
+                    <th>Arrival Time</th>
+                    <th>Departure Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Panvel-Beyond</td>
+                    <td>08:00 AM</td>
+                    <td>09:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Pen</td>
+                    <td>08:40 AM</td>
+                    <td>09:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Karjat</td>
+                    <td>08:00 AM</td>
+                    <td>09:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Alibag</td>
+                    <td>08:15 AM</td>
+                    <td>09:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Khopoli</td>
+                    <td>07:45 AM</td>
+                    <td>09:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Nagothane</td>
+                    <td>08:00 AM</td>
+                    <td>09:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Uran</td>
+                    <td>07:45 AM</td>
+                    <td>09:00 AM</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>To find route click here <a href="companybus.html">company bus</a> page.</p>
+    </footer>
+</body>
+</html>

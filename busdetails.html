@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSW Bus Transport</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://startupstorymedia.com/wp-content/uploads/2022/11/Mobility_Switch-2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the content fills the entire height of the viewport */
+        }
+
+        .site-header {
+            background: black; /* Black navigation bar */
+            font-family: Calibri, sans-serif;
+            padding: 10px 15px;
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 60px; /* Smaller logo height */
+            width: auto; /* Maintain aspect ratio */
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 25px; /* Gap between navigation items */
+        }
+
+        li a {
+            color: white; /* White text on the black navbar */
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none; /* No underlines */
+        }
+
+        .content {
+            flex: 1; /* Allows content to grow and push the footer to the bottom */
+            display: flex; /* Allows alignment within */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+        }
+
+        .hero {
+            text-align: center; /* Center text */
+            color: white; /* White text */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 50px; /* Padding for content */
+            border-radius: 10px; /* Rounded corners */
+            border: none; /* No border */
+            outline: none; /* No outline */
+            box-shadow: none; /* No shadow */
+        }
+
+        .hero h1 {
+            color: white; /* Ensures h1 is white */
+            font-size: 4em; /* Large font size */
+            border: none; /* No border */
+            outline: none; /* No outline */
+            box-shadow: none; /* No shadow */
+        }
+        
+        .hero p {
+            color: white; /* White color for paragraph */
+            border: none; /* No border */
+            outline: none; /* No outline */
+            box-shadow: none; /* No shadow */
+        }
+    </style>
+
+    <link rel="icon" href="images/JSW_logo.jpg" type="image/jpg">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                    <img src='https://www.jsw.in/sites/all/themes/jsw_theme/images/logos/jsw.png' alt="Company Logo" style="height: 60px; width: auto;">
+                </div>
+                <ul>
+                    <li><a href="busdetails.html">Home</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="Routes.html">Route Map</a></li>
+                    <li><a href="CompanyRoutes.html">company routes Map</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Explore Bus Routes and <br>Schedules with JSW</h1>
+              
+            </div>
+        </header>
+    </div>
+</body>
+</html>
